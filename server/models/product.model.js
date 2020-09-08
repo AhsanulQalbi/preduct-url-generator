@@ -8,12 +8,21 @@ module.exports = (sequelize, DataTypes) =>{
             type : DataTypes.BIGINT,
         },
 
+        discount : {
+            type : DataTypes.FLOAT
+        },
+
         description : {
             type : DataTypes.STRING
         },
-        picture : {
-            type : DataTypes.STRING,
+
+        weight : {
+            type : DataTypes.FLOAT
         },
+
+        condition : {
+            type : DataTypes.STRING
+        }
     }, {
         paranoid: true,
         deletedAt: 'deleted_at',

@@ -10,6 +10,9 @@ const create = (req, res) => {
         name: req.body.name,
         price: req.body.price,
         description: req.body.description,
+        discount :  req.body.discount,
+        weight : req.body.weight,
+        condition : req.body.condition,
         UserId : req.body.UserId
     }).then((product) => {
         setContent(200, { id: product.id , name: product.name, description:  product.description});
